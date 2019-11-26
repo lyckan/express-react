@@ -1,0 +1,17 @@
+{
+  "name": "express-react",
+  "description": "TEST\u0000\u0000\u0000\u0000???\u0000?\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+  "main": "index.js",
+  "authors": [
+    "lyckan <lycksen@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/lyckan/express-react",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
