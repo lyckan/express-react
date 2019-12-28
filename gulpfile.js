@@ -28,7 +28,20 @@ gulp.task("serve", gulp.series("live-server"), function() {
   });
 });
 */
+
+function bundle() {
+  broswerify({
+    entries: "app/main.jsx",
+    debug: true
+  })
+    .transform(reactify)
+    .bundle()
+    .pipe(source("app.js"))
+    .pipe(gulp.dest("./.temp"));
+}
+
 function serve() {
+  bundle();
   var server = new LiveServer("server/main.js");
   server.start();
   browserSync.init(null, {
